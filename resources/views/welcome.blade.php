@@ -36,6 +36,7 @@
 
 </style>
 <!--Slider-->
+
 <section>
     <div class="pt-14 bg-white">
         <div id="slider" class="swiper-container w-full flex flex-wrap flex-col md:flex-row">
@@ -50,7 +51,7 @@
                                     class="font-bold leading-tight text-3xl md:text-6xl antialiased sm:subpixel-antialiased md:antialiased tracking-wide">
                                     <span class="text-red-500">BGR Constructions</span></h2>
                             </div>
-                            <div class="my-10 md:mx-10 md:-mt-2"><a href="#appointment"
+                            <div class="my-10 md:mx-10 md:-mt-2"><a href="{{route('contactus')}}"
                                     class="bg-pink-500  ease-linear hover:bg-blue-600 text-white px-6 py-4 rounded-full">Contact
                                     Us</a></div>
                         </div>
@@ -980,10 +981,13 @@ l225 123 3 123 c1 67 -1 122 -5 122 -4 0 -140 -74 -300 -163z" />
     <h3 class="my-4 text-3xl leading-tight">
         EVERY SUCCESSFUL PROJECT STARTS WITH GOOD PLANNING!
     </h3>
-    <button
-        class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-        Contact Us!
-    </button>
+    <a href="{{route('contactus')}}">
+        <button
+            class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            Contact Us!
+        </button>
+    </a>
+
 </section>
 
 

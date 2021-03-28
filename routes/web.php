@@ -28,3 +28,17 @@ Route::get('services', function () {
 Route::get('products', function () {
     return view('pages.products');
 })->name('products');
+
+Route::get('leo-enterprise', function () {
+    return view('pages.leo');
+})->name('leo');
+
+Route::get('nitya-enterprise', function () {
+    return view('pages.nitya');
+})->name('nitya');
+
+Route::get('contact-us', function () {
+    return view('pages.contactus');
+})->name('contactus');
+
+Route::post('contact', 'App\Http\Controllers\ContactusController@contactPost')->name('contact-post');
