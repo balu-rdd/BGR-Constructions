@@ -27,14 +27,20 @@
                         <p class="py-2">
                             <i class="fas fa-arrow-circle-right"> AGGREGATES</i>
                             <i class="fas fa-arrow-circle-right px-6"> M – SAND</i>
-                        </p>
-                        <p class="py-2">
                             <i class="fas fa-arrow-circle-right px-6"> PLASTERING SAND</i>
-                            <i class="fas fa-arrow-circle-right px-6"> SOLID BLOCKS</i>
+
                         </p>
                         <p class="py-2">
+                            <i class="fas fa-arrow-circle-right px-6"> SOLID BLOCKS</i>
                             <i class="fas fa-arrow-circle-right px-6"> SOIL</i>
                             <i class="fas fa-arrow-circle-right px-6"> GRAVEL</i>
+
+
+                        </p>
+
+                        <p class="py-2">
+                            <i class="fas fa-arrow-circle-right px-6"> Cement</i>
+                            <i class="fas fa-arrow-circle-right px-6"> Fly Ash</i>
                         </p>
                     </div>
                 </div>
@@ -306,6 +312,48 @@
                 </div>
             </div>
         </div>
+
+        <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+            <div class="w-full sm:w-1/2 p-6 mt-6">
+                <div class="w-5/6 sm:h-96 mx-auto bg-no-repeat bg-center "
+                    style="background-image: url('assets/leo/cement-powder.jpg')">
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 p-6 mt-6">
+                <div class="align-middle">
+                    <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">Cement </h3>
+                    <p class="text-gray-600 mb-8">
+                        <br>
+                        A cement is a binder, a substance used for construction that sets, hardens, and adheres to other
+                        materials to bind them together. Cement is seldom used on its own, but rather to bind sand and
+                        gravel (aggregate) together.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap">
+            <div class="w-5/6 sm:w-1/2 p-6">
+                <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">Fly Ash
+                </h3>
+                <p class="text-gray-600 mb-8">Fly ash is a fine powder that is a byproduct of burning pulverized coal in
+                    electric generation power plants. Fly ash is a pozzolan, a substance containing aluminous and
+                    siliceous material that forms cement in the presence of water. When mixed with lime and water, fly
+                    ash forms a compound similar to Portland cement..
+                </p>
+                <p class="text-gray-600 mb-8">
+                    When mixed with lime and water, fly
+                    ash forms a compound similar to Portland cement..
+                </p>
+            </div>
+            <div class="w-full sm:w-1/2 p-6">
+                <div class="w-full sm:h-64 mx-auto bg-no-repeat bg-center "
+                    style="background-image: url('assets/nitya/fly-ash.jpg')">
+                </div>
+            </div>
+        </div>
+
 
 
         <div class="flex flex-wrap flex-col-reverse sm:flex-row">
