@@ -111,16 +111,20 @@
                 <p class="uppercase text-gray-500 md:mb-6">Links</p>
                 <ul class="list-reset mb-6">
                     <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                        <a href="{{route('home')}}" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Home</a>
+                        <a href="{{route('home')}}"
+                            class="no-underline hover:underline text-gray-800 hover:text-pink-500">Home</a>
                     </li>
                     <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                        <a href="{{route('about')}}" class="no-underline hover:underline text-gray-800 hover:text-pink-500">About</a>
+                        <a href="{{route('about')}}"
+                            class="no-underline hover:underline text-gray-800 hover:text-pink-500">About</a>
                     </li>
                     <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                        <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Services</a>
+                        <a href="{{route('services')}}"
+                            class="no-underline hover:underline text-gray-800 hover:text-pink-500">Services</a>
                     </li>
                     <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                        <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Products</a>
+                        <a href="{{route('products')}}"
+                            class="no-underline hover:underline text-gray-800 hover:text-pink-500">Products</a>
                     </li>
                     <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                         <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Projects</a>
@@ -130,8 +134,12 @@
             <div class="flex-1">
                 <p class="uppercase text-gray-500 md:mb-1">{{env('APP_NAME')}}</p>
                 <div id="map" style=" height: 20vh;width: 100%;"></div>
+                <p class="text-gray-600">
+                    No : 1131, 17th cross, HSR Layout , 7th Sector, <br> Bangalore,  560 102 
+                </p>
             </div>
+           
         </div>
     </div>
-   
+
 </footer>

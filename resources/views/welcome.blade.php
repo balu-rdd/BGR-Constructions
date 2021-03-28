@@ -1,6 +1,40 @@
 @extends('Includes.layout')
 
+
 @section('content')
+<style>
+    @keyframes carouselAnim {
+        from {
+            transform: translate(0, 0);
+        }
+
+        to {
+            transform: translate(calc(-100% + (6*300px)));
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .container .carousel-items {
+            animation: carouselAnim 60s infinite alternate linear;
+        }
+
+        @keyframes carouselAnim {
+            from {
+                transform: translate(0, 0);
+            }
+
+            to {
+                transform: translate(calc(-100% + (5*300px)));
+            }
+        }
+    }
+
+    .carousel-focus:hover {
+        transition: all 0.8s;
+        transform: scale(1.1);
+    }
+
+</style>
 <!--Slider-->
 <section>
     <div class="pt-14 bg-white">
@@ -90,12 +124,13 @@
                     {{env('APP_NAME')}}.,
                 </h1>
                 <p class="leading-normal text-2xl mb-8">
-                    {{env('APP_NAME')}}., Builders is Hosur’s most respected and diversified Private Property Developer
+                    {{env('APP_NAME')}}., Builders is Banglore's most respected and diversified Private Property
+                    Developer
                     that owns and manages a premium property portfolio of residential apartments, condominiums, retail
                     malls, and office spaces.
 
                     Skillful planners and neighborhood builders, Real Value is known in the real estate market for being
-                    the first to recognize the importance of creating contemporary self-contained habitats in Chennai
+                    the first to recognize the importance of creating contemporary self-contained habitats in Hyderabad
                     besides the ability to identify and define locations in emerging suburban areas that offer
                     appreciable advantages.
                 </p>
@@ -133,6 +168,7 @@
         </svg>
     </div>
 </section>
+
 <section class="bg-white border-b py-8">
     <div class="container max-w-5xl mx-auto m-8">
         <div class="pb-10">
@@ -795,7 +831,7 @@ l225 123 3 123 c1 67 -1 122 -5 122 -4 0 -140 -74 -300 -163z" />
                             critical areas:
                             <br> <span class="text-initiative-orange hover:underline" style="color: #e77e29">
                                 schedule, cost, quality and safety.,</span>
-                           
+
                         </p>
                     </p>
                 </div>
@@ -815,7 +851,7 @@ l225 123 3 123 c1 67 -1 122 -5 122 -4 0 -140 -74 -300 -163z" />
                 </p>
                 <p
                     class="subpixel-antialiased w-full font-bold text-2xl text-grey-800 tracking-wider text-center pb-8 font-semibold tracking-wide  my-2   leading-tight ">
-                    RAILWAYS
+                    Buildings & Factories
                     <div class="w-full mb-4">
                         <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
                     </div>
@@ -830,7 +866,7 @@ l225 123 3 123 c1 67 -1 122 -5 122 -4 0 -140 -74 -300 -163z" />
                 </p>
                 <p
                     class="subpixel-antialiased w-full font-bold text-2xl text-red-600 tracking-wider text-center pb-8 font-semibold tracking-wide  my-2   leading-tight ">
-                    ROADS & HIGHWAY BRIDGES
+                    ROADS & HIGHWAY Projects
                     <div class="w-full mb-4">
                         <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
                     </div>
@@ -852,6 +888,55 @@ l225 123 3 123 c1 67 -1 122 -5 122 -4 0 -140 -74 -300 -163z" />
                 </p>
             </div>
         </div>
+    </div>
+</section>
+
+<section class="bg-white">
+    <div class="container mx-auto w-full overflow-hidden relative">
+        <div class="carousel-items flex items-center justify-center"
+            style="width: fit-content; animation: carouselAnim 15s infinite alternate linear;">
+            <div class="carousel-focus flex items-center flex-col relative bg-white mx-5 my-10 px-4 py-3 rounded-lg shadow-lg"
+                style="width: 270px;">
+                <img class="object-contain h-48 w-full " src="{{asset('assets/client_logo/gayatri.gif')}}" alt="Img">
+            </div>
+
+            <div class="carousel-focus flex items-center flex-col relative bg-white mx-5 my-10 px-4 py-3 rounded-lg shadow-lg "
+                style="width: 270px;">
+                <div class="mb-14"></div>
+                <div class="h-18 w-full " style="text-align:center;">
+                    <svg data-name="Kia" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="220"
+                        height="140">
+                        <path
+                            d="M36.36 8.7v16.49a.44.44 0 0 1-.41.41h-4.1a.45.45 0 0 1-.41-.3V9.73a.33.33 0 0 0-.31-.31h-.51v-1h5.43a.27.27 0 0 1 .31.28zm-13.83 8v-.2c0-.1 0-.1.1-.21l4.92-7.37a.2.2 0 0 0 0-.31c-.1-.1-.21-.2-.31-.2h-4.51a.68.68 0 0 0-.61.41l-3.89 5.42c-.1.21-.21.21-.31.21a.22.22 0 0 1-.2-.21V8.7a.44.44 0 0 0-.41-.4h-5.23a.1.1 0 0 0-.1.1v.82a.1.1 0 0 0 .1.1h.52a.32.32 0 0 1 .3.31v15.56c0 .21.11.41.31.41h4a.43.43 0 0 0 .41-.41v-6.45a.22.22 0 0 1 .21-.2.22.22 0 0 1 .2.2l4.71 6.56a.86.86 0 0 0 .62.4h4.71c.1 0 .21-.1.31-.2a.32.32 0 0 0 0-.41zm28.16-8.1c-.1-.2-.3-.2-.51-.2h-6.35a.1.1 0 0 0-.1.1v.82a.1.1 0 0 0 .1.1h.51a.27.27 0 0 1 .31.31v.2L39.53 25.3a.37.37 0 0 0 .1.3.39.39 0 0 0 .31.1h4a.69.69 0 0 0 .52-.4l3.38-10.76s0-.1.2-.1.2.1.2.1l3.37 10.76a1 1 0 0 0 .52.4h4a.39.39 0 0 0 .31-.1.37.37 0 0 0 .1-.3zM67.8 17c0 9.32-15.16 17-33.8 17S.2 26.42.2 17 15.36 0 34 0s33.8 7.68 33.8 17zm-4 0C63.8 8.81 50.49 2.15 34 2.15S4.2 8.81 4.2 17 17.51 31.85 34 31.85 63.8 25.19 63.8 17z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="carousel-focus flex items-center flex-col relative bg-white mx-5 my-10 px-4 py-3 rounded-lg shadow-lg"
+                style="width: 270px;">
+                <div class="mb-14"></div>
+                <img src="assets/client_logo/Hyundai_Motor_Company_logo.svg" alt="">
+
+            </div>
+
+            <div class="carousel-focus flex items-center flex-col relative bg-white mx-5 my-10 px-4 py-3 rounded-lg shadow-lg"
+                style="width: 270px;">
+                <img class="object-contain h-48 w-full" src="assets/client_logo/Dilip-Buildcon-Limited.jpg" alt="Img">
+            </div>
+
+            <div class="carousel-focus flex items-center flex-col relative bg-white mx-5 my-10 px-4 py-3 rounded-lg shadow-lg"
+                style="width: 270px;">
+                <img class="object-contain h-48 w-full" src="assets/client_logo/ultratech-cement-logo.png" alt="Img">
+            </div>
+
+            <div class="carousel-focus flex items-center flex-col relative bg-white mx-5 my-10 px-4 py-3 rounded-lg shadow-lg"
+                style="width: 270px;">
+                <img class="object-contain h-48 w-full" src="assets/client_logo/dp-jain.png" alt="Img">
+            </div>
+
+        </div>
+
     </div>
 </section>
 
@@ -881,6 +966,10 @@ l225 123 3 123 c1 67 -1 122 -5 122 -4 0 -140 -74 -300 -163z" />
         </g>
     </g>
 </svg>
+
+
+
+
 <section class="container mx-auto text-center py-6 mb-12">
     <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
         {{env('APP_NAME')}}

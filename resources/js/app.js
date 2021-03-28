@@ -3,4 +3,4 @@
 import 'alpinejs'
 
 //Swiper
-require('./swiper')
+// require('./swiper')

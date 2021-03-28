@@ -11,22 +11,22 @@
                 <div class="w-full lg:w-3/5 px-4 text-center lg:text-left self-center">
                     <h1 class="mb-4 text-3xl font-extrabold leading-none text-white">ABOUT {{env('APP_NAME')}}.</h1>
                     <p class="mb-6 text-white text-sm">{{env('APP_NAME')}} Multi – Discipline engineering contracting and
-                        construction company having its office at Hosur in the state of Tamilnadu, India.</p>
+                        construction company having its office at Bangalore in the state of Karnataka, India.</p>
                     <p class="mb-6 text-white text-sm">{{env('APP_NAME')}} has been actively engaged in Civil Construction
                         and Infrastructure Development activities. {{env('APP_NAME')}} has worked with various Clients of
-                        Public and Private Sectors Such as Indian Railways, Highway Department, and various private
+                        Public and Private Sectors Such as Highway Department, and various private
                         companies, etc.</p>
                     <p class="mb-6 text-white text-sm">Over the last few years, {{env('APP_NAME')}} has undergone rapid
-                        expansion and is at present working in Tamilnadu & Karnataka. Growth can be directly attributed
+                        expansion and is at present working in Telangana & Karnataka. Growth can be directly attributed
                         to its propensity to adopt, endure and remain credible amongst all its competitors. Company has
                         diversified into taking up large projects by directly participating in tenders and as well as
                         entering into strategic alliance with various reputed construction companies for joint ventures.
                     </p>
                     <p class="mb-12">
-                        <a href="/users/sign_up"
+                        {{-- <a href="/users/sign_up"
                             class="inline-block bg-indigo-600 hover:bg-indigo-800 text-white text-sm tracking-wider rounded py-4 px-8 shadow font-bold">
                             View Projects
-                        </a>
+                        </a> --}}
                     </p>
 
                 </div>
@@ -127,15 +127,15 @@
                 </div>
             </div>
         </div>
-        <div class="line line-down">
+        {{-- <div class="line line-down">
             <div class="container mx-auto px-4">
                 <div
                     class="icon ml-auto border rounded-full w-32 h-32 flex items-center justify-center bg-gray-100 z-10 relative">
                     <i class="fas fa-images fa-3x inline-block opacity-50 text-orange-500"></i>
                 </div>
             </div>
-        </div>
-        <div class="container mx-auto px-4 mb-24">
+        </div> --}}
+        {{-- <div class="container mx-auto px-4 mb-24">
             <div class="flex flex-wrap flex-wrap-reverse mb-8 -mx-4 items-center">
                 <div class="lg:w-4/12 px-4 mb-6">
                     <img class="shadow-lg border rounded" src="{{asset('assets/equipment.svg')}}" />
@@ -373,7 +373,7 @@
                 </div>
 
             </div>
-        </div>
+        </div> --}}
     </section>
 </div>
 @endsection

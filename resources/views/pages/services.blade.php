@@ -26,14 +26,13 @@
                     <div class="flex-auto ">
                         <p class="py-2">
                             <i class="fas fa-arrow-circle-right"> HEAVY CIVIL PROJECTS</i>
-                            <i class="fas fa-arrow-circle-right px-6"> ROADS & HIGHWAY BRIDGES</i>
+                            <i class="fas fa-arrow-circle-right px-6"> ROADS & HIGHWAY PROJECTS</i>
                         </p>
                         <p class="py-2">
-                            <i class="fas fa-arrow-circle-right px-6"> MINING OPERATION</i>
                             <i class="fas fa-arrow-circle-right px-6"> CONSTRUCTION PROJECTS</i>
                         </p>
                         <p class="py-2">
-                            <i class="fas fa-arrow-circle-right px-6"> RAILWAYS</i>
+                            <i class="fas fa-arrow-circle-right px-6"> BUILDINGS & FACTORIES</i>
                             <i class="fas fa-arrow-circle-right px-6"> MATERIAL SUPPLYS</i>
                         </p>
                     </div>
@@ -86,7 +85,8 @@
         <div class="flex flex-wrap">
             <div class="w-5/6 sm:w-1/2 p-6">
                 <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">HEAVY CIVIL PROJECTS</h3>
-                <p class="text-gray-600 mb-8">One of the main activities of the company. Jayachandra & Co has enjoyed
+                <p class="text-gray-600 mb-8">One of the main activities of the company.
+                    <strong>{{env('APP_NAME')}}</strong> has enjoyed
                     many years of success in this sector of civil and infrastructure works. Company provides full range
                     of services which include :
                 </p>
@@ -120,8 +120,7 @@
                                 x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
                                 <div class="p-6">
                                     <p class="text-base antialiased font-normal tracking-wide leading-7 text-justify">
-                                        Jayachandra
-                                        and co owns a large fleet of heavy
+                                        <strong>{{env('APP_NAME')}}</strong> owns a large fleet of heavy
                                         Diamond wire saw cutting
                                         equipment and is supported by a pool of highly skilled and motivated team of
                                         people for operation, maintenance, supervision and management of cutting
@@ -183,7 +182,8 @@
                                     </p>
                                     <p
                                         class="text-base antialiased font-normal tracking-wide leading-7 py-2 text-justify">
-                                        In an era of advanced technologies and new techniques, Jayachandra & co
+                                        In an era of advanced technologies and new techniques,
+                                        <strong>{{env('APP_NAME')}}</strong>
                                         continuously strives for innovation and enhanced efficiency to carry out
                                         the full spectrum of Heavy Civil Projects. The Company has invested
                                         heavely in innovations and latest technology, thereby gaining
@@ -222,7 +222,8 @@
                         design, project management and implementation right through to support and upgrades. We are
                         committed to best practices and professional integrity to ensure we deliver quality. Customer
                         satisfaction drives every aspect of their commercial contractor business. These time-honored
-                        qualities are incorporated into every project built by Jayachandra and co..<br /><br />
+                        qualities are incorporated into every project built by
+                        <strong>{{env('APP_NAME')}}</strong>..<br /><br />
                     </p>
                     <div class=" max-w-xl mx-auto border-8 border-grey-900" x-data="{selected:null}">
                         <ul class="shadow-box">
@@ -242,13 +243,15 @@
                                     <div class="p-6">
                                         <p
                                             class="text-base antialiased font-normal tracking-wide leading-7 text-justify">
-                                            Jayachandra and co ability to combine the right equipment with our
+                                            <strong>{{env('APP_NAME')}}</strong> ability to combine the right equipment
+                                            with our
                                             experienced crews and project managers ensures that your site is ready on
                                             time even on an accelerated schedule.
                                             <br>
                                             Our history of commercial services successes range from reservoirs,
                                             landfills, and retail development to airports, highways, power plants,
-                                            railways, residential and industrial complexes. Jayachandra and co E
+                                            residential and industrial complexes.
+                                            <strong>{{env('APP_NAME')}}</strong> E
                                             provides the highest quality of service for just about every type of
                                             commercial excavation project, and that’s a promise that’s backed by the
                                             testimony of more than a half century’s worth of satisfied customers.
@@ -289,6 +292,8 @@
                                         </ul>
                                     </div>
                                 </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -296,14 +301,15 @@
 
         <div class="flex flex-wrap">
             <div class="w-5/6 sm:w-1/2 p-6">
-                <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">ROADS & HIGHWAY BRIDGES</h3>
+                <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">ROADS & HIGHWAY PROJECTS</h3>
                 <p class="text-gray-600 mb-8"> Roads and Highways development are essential for any nation’s economic
                     growth. Indian Government planning to increase spends on road development. As per NHAI development
                     of road needs to be awarded within two to three years.
                 </p>
                 <p class="text-gray-600 mb-8">
                     With in herent skills and resource to develop and execute high magnitude infrastructure development
-                    projects, JAYACHANDRA AND CO has ventured into Road & Bridge Construction Sector and entered
+                    projects, <strong>{{env('APP_NAME')}}</strong> has ventured into Road & Bridge Construction Sector
+                    and entered
                     subcontract with LARSEN & TOUBRO LTD for NH 7 in Tamilnadu , which is a part of prestigious golden
                     Quadrilateral road net work managed by NHAI.
                 </p>
@@ -316,7 +322,7 @@
             </div>
         </div>
 
-        <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+        {{-- <div class="flex flex-wrap flex-col-reverse sm:flex-row">
             <div class="w-full sm:w-1/2 p-6 mt-6">
                 <div class="w-5/6 sm:h-96 mx-auto bg-no-repeat bg-center "
                     style="background-image: url('assets/stationremix5.svg')">
@@ -327,185 +333,183 @@
                     <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">RAILWAYS </h3>
                     <p class="text-gray-600 mb-8">
                         <br>
-                        JAYACHANDRA AND CO has successfully tackled railway works and has acquired experience in the
-                        areas of CULVERT, Earthwork, Concrete works and other associated civil works. Jayachandra and co
-                        successfully handled many Electric pole laying work in Indian railways..<br /><br />
-                    </p>
+                        <strong>{{env('APP_NAME')}}</strong> has successfully tackled railway works and has acquired
+        experience in the
+        areas of CULVERT, Earthwork, Concrete works and other associated civil works.
+        <strong>{{env('APP_NAME')}}</strong>
+        successfully handled many Electric pole laying work in Indian railways..<br /><br />
+        </p>
 
-                </div>
-            </div>
-        </div>
+    </div>
+    </div>
+    </div> --}}
 
-        <div class="flex flex-wrap">
+    {{-- <div class="flex flex-wrap">
             <div class="w-5/6 sm:w-1/2 p-6">
                 <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">MINING OPERATIONS
                 </h3>
-                <p class="text-gray-600 mb-8">Jayachandra and co owns a large fleet of heavy mining equipment and is
-                    supported by a pool of highly skilled and motivated team of people for operation, maintenance,
-                    supervision and management of mining services..
-                </p>
+                <p class="text-gray-600 mb-8"><strong>{{env('APP_NAME')}}</strong> owns a large fleet of heavy mining
+    equipment and is
+    supported by a pool of highly skilled and motivated team of people for operation, maintenance,
+    supervision and management of mining services..
+    </p>
+    <p class="text-gray-600 mb-8">
+        <strong>{{env('APP_NAME')}}</strong> lays special emphasis on adoption of scientific, Systematic and safe mining
+        practices for maximizing efficiency of its services, with due care for mineral conservation. Company
+        makes every possible efforts for minimizing adverse impacts of mining operations on the local
+        ecolory..
+    </p>
+    </div>
+    <div class="w-full sm:w-1/2 p-6">
+        <div class="w-full sm:h-64 mx-auto bg-no-repeat bg-center "
+            style="background-image: url('assets/Dumptruck_copy.svg')">
+        </div>
+    </div>
+    </div> --}}
+
+
+    <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+        <div class="w-full sm:w-1/2 p-6 mt-6">
+            <div class="w-5/6 sm:h-96 mx-auto bg-no-repeat bg-center "
+                style="background-image: url('assets/frankfurt-skyline.svg')">
+            </div>
+        </div>
+        <div class="w-full sm:w-1/2 p-6 mt-6">
+            <div class="align-middle">
+                <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">MATERIAL SUPPLY </h3>
                 <p class="text-gray-600 mb-8">
-                    Jayachandra and co lays special emphasis on adoption of scientific, Systematic and safe mining
-                    practices for maximizing efficiency of its services, with due care for mineral conservation. Company
-                    makes every possible efforts for minimizing adverse impacts of mining operations on the local
-                    ecolory..
+                    <strong>Aggregates</strong> are inert granular materials such as sand, gravel, or crushed stone
+                    that, along with
+                    water and portland cement, are an essential ingredient in concrete. Fine aggregates generally
+                    consist of natural sand or crushed stone with most particles passing through a 3/8-inch
+                    sieve.<br /><br />
                 </p>
-            </div>
-            <div class="w-full sm:w-1/2 p-6">
-                <div class="w-full sm:h-64 mx-auto bg-no-repeat bg-center "
-                    style="background-image: url('assets/Dumptruck_copy.svg')">
+                <div class=" max-w-xl mx-auto border-8 border-grey-900" x-data="{selected:null}">
+                    <ul class="shadow-box">
+                        <li class="relative border-b border-gray-200 text-gray-100 gradient">
+                            <button type="button" class="w-full px-8 py-6 text-left"
+                                @click="selected !== 1 ? selected = 1 : selected = null">
+                                <div class="flex items-center justify-between">
+                                    <span class="accord-heading">
+                                        M - SAND</span>
+                                    <span class="ico-plus"></span>
+                                </div>
+                            </button>
+
+                            <div class="relative overflow-hidden transition-all max-h-0 duration-700" style=""
+                                x-ref="container1"
+                                x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                                <div class="p-6">
+                                    <p class="text-base antialiased font-normal tracking-wide leading-7 text-justify">
+                                        M-Sand stands for Manufactured Sand.
+                                        <br>
+                                        M-sand is crushed aggregates produced from hard granite stone which is
+                                        cubically shaped with grounded edges, washed and graded with consistency to
+                                        be used as a substitute of river sand. It is a fine aggregate that is
+                                        produced by crushing stone, gravel, or slag.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="relative border-b border-gray-200 text-gray-100 gradient">
+                            <button type="button" class="w-full px-8 py-6 text-left"
+                                @click="selected !== 2 ? selected = 2 : selected = null">
+                                <div class="flex items-center justify-between">
+                                    <span class="accord-heading">
+                                        PLASTERING SAND</span>
+                                    <span class="ico-plus"></span>
+                                </div>
+                            </button>
+
+                            <div class="relative overflow-hidden transition-all max-h-0 duration-700" style=""
+                                x-ref="container1"
+                                x-bind:style="selected == 2 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                                <div class="p-6">
+                                    <p class="text-base antialiased font-normal tracking-wide leading-7 text-justify">
+                                        We are the supplying Water wash Plastering Sand to all the customers. Our
+                                        major marketing place is Bangalore and Krishnagiri Dist.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="relative border-b border-gray-200 text-gray-100 gradient">
+                            <button type="button" class="w-full px-8 py-6 text-left"
+                                @click="selected !== 3 ? selected = 3 : selected = null">
+                                <div class="flex items-center justify-between">
+                                    <span class="accord-heading">
+                                        SOLID BLOCKS</span>
+                                    <span class="ico-plus"></span>
+                                </div>
+                            </button>
+
+                            <div class="relative overflow-hidden transition-all max-h-0 duration-700" style=""
+                                x-ref="container1"
+                                x-bind:style="selected == 3 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                                <div class="p-6">
+                                    <p class="text-base antialiased font-normal tracking-wide leading-7 text-justify">
+                                        The blocks and bricks are made out of mixture of cement, sand and stone
+                                        chips. It saves cement in masonry work, bringing down cost of construction
+                                        considerably. Background. A concrete block is primarily used as a building
+                                        material in the construction of walls.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="relative border-b border-gray-200 text-gray-100 gradient">
+                            <button type="button" class="w-full px-8 py-6 text-left"
+                                @click="selected !== 4 ? selected = 4 : selected = null">
+                                <div class="flex items-center justify-between">
+                                    <span class="accord-heading">
+                                        SOIL</span>
+                                    <span class="ico-plus"></span>
+                                </div>
+                            </button>
+
+                            <div class="relative overflow-hidden transition-all max-h-0 duration-700" style=""
+                                x-ref="container1"
+                                x-bind:style="selected == 4 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                                <div class="p-6">
+                                    <p class="text-base antialiased font-normal tracking-wide leading-7 text-justify">
+                                        We are supplying Soil to all the customers, Because of its makeup, soil has
+                                        a variety of uses in industries.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="relative border-b border-gray-200 text-gray-100 gradient">
+                            <button type="button" class="w-full px-8 py-6 text-left"
+                                @click="selected !== 5 ? selected = 5 : selected = null">
+                                <div class="flex items-center justify-between">
+                                    <input type="checkbox" name="panel" id="panel-1" class="hidden">
+                                    <span class="accord-heading">
+                                        GRAVEL</span>
+                                    <span class="ico-plus"></span>
+                                </div>
+                            </button>
+
+                            <div class="relative overflow-hidden transition-all max-h-0 duration-700" style=""
+                                x-ref="container1"
+                                x-bind:style="selected == 5 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                                <div class="p-6">
+                                    <p class="text-base antialiased font-normal tracking-wide leading-7 text-justify">
+                                        We are also supplying gravel to the customers, gravel are used for road
+                                        construction, for mixing with asphalt, as construction fill, and in the
+                                        production of construction materials like concrete blocks, bricks, and
+                                        pipes. It is also used to make roofing shingles, used on icy roads in the
+                                        winter, for railroad ballast, and water filtration. </p>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-
-
-        <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-            <div class="w-full sm:w-1/2 p-6 mt-6">
-                <div class="w-5/6 sm:h-96 mx-auto bg-no-repeat bg-center "
-                    style="background-image: url('assets/frankfurt-skyline.svg')">
-                </div>
-            </div>
-            <div class="w-full sm:w-1/2 p-6 mt-6">
-                <div class="align-middle">
-                    <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">MATERIAL SUPPLY </h3>
-                    <p class="text-gray-600 mb-8">
-                        <strong>Aggregates</strong> are inert granular materials such as sand, gravel, or crushed stone
-                        that, along with
-                        water and portland cement, are an essential ingredient in concrete. Fine aggregates generally
-                        consist of natural sand or crushed stone with most particles passing through a 3/8-inch
-                        sieve.<br /><br />
-                    </p>
-                    <div class=" max-w-xl mx-auto border-8 border-grey-900" x-data="{selected:null}">
-                        <ul class="shadow-box">
-                            <li class="relative border-b border-gray-200 text-gray-100 gradient">
-                                <button type="button" class="w-full px-8 py-6 text-left"
-                                    @click="selected !== 1 ? selected = 1 : selected = null">
-                                    <div class="flex items-center justify-between">
-                                        <span class="accord-heading">
-                                            M - SAND</span>
-                                        <span class="ico-plus"></span>
-                                    </div>
-                                </button>
-
-                                <div class="relative overflow-hidden transition-all max-h-0 duration-700" style=""
-                                    x-ref="container1"
-                                    x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
-                                    <div class="p-6">
-                                        <p
-                                            class="text-base antialiased font-normal tracking-wide leading-7 text-justify">
-                                            M-Sand stands for Manufactured Sand.
-                                            <br>
-                                            M-sand is crushed aggregates produced from hard granite stone which is
-                                            cubically shaped with grounded edges, washed and graded with consistency to
-                                            be used as a substitute of river sand. It is a fine aggregate that is
-                                            produced by crushing stone, gravel, or slag.
-                                        </p>
-
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="relative border-b border-gray-200 text-gray-100 gradient">
-                                <button type="button" class="w-full px-8 py-6 text-left"
-                                    @click="selected !== 2 ? selected = 2 : selected = null">
-                                    <div class="flex items-center justify-between">
-                                        <span class="accord-heading">
-                                            PLASTERING SAND</span>
-                                        <span class="ico-plus"></span>
-                                    </div>
-                                </button>
-
-                                <div class="relative overflow-hidden transition-all max-h-0 duration-700" style=""
-                                    x-ref="container1"
-                                    x-bind:style="selected == 2 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
-                                    <div class="p-6">
-                                        <p
-                                            class="text-base antialiased font-normal tracking-wide leading-7 text-justify">
-                                            We are the supplying Water wash Plastering Sand to all the customers. Our
-                                            major marketing place is Bangalore and Krishnagiri Dist.
-                                        </p>
-
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="relative border-b border-gray-200 text-gray-100 gradient">
-                                <button type="button" class="w-full px-8 py-6 text-left"
-                                    @click="selected !== 3 ? selected = 3 : selected = null">
-                                    <div class="flex items-center justify-between">
-                                        <span class="accord-heading">
-                                            SOLID BLOCKS</span>
-                                        <span class="ico-plus"></span>
-                                    </div>
-                                </button>
-
-                                <div class="relative overflow-hidden transition-all max-h-0 duration-700" style=""
-                                    x-ref="container1"
-                                    x-bind:style="selected == 3 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
-                                    <div class="p-6">
-                                        <p
-                                            class="text-base antialiased font-normal tracking-wide leading-7 text-justify">
-                                            The blocks and bricks are made out of mixture of cement, sand and stone
-                                            chips. It saves cement in masonry work, bringing down cost of construction
-                                            considerably. Background. A concrete block is primarily used as a building
-                                            material in the construction of walls.
-                                        </p>
-
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="relative border-b border-gray-200 text-gray-100 gradient">
-                                <button type="button" class="w-full px-8 py-6 text-left"
-                                    @click="selected !== 4 ? selected = 4 : selected = null">
-                                    <div class="flex items-center justify-between">
-                                        <span class="accord-heading">
-                                            SOIL</span>
-                                        <span class="ico-plus"></span>
-                                    </div>
-                                </button>
-
-                                <div class="relative overflow-hidden transition-all max-h-0 duration-700" style=""
-                                    x-ref="container1"
-                                    x-bind:style="selected == 4 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
-                                    <div class="p-6">
-                                        <p
-                                            class="text-base antialiased font-normal tracking-wide leading-7 text-justify">
-                                            We are supplying Soil to all the customers, Because of its makeup, soil has
-                                            a variety of uses in industries.
-                                        </p>
-
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="relative border-b border-gray-200 text-gray-100 gradient">
-                                <button type="button" class="w-full px-8 py-6 text-left"
-                                    @click="selected !== 5 ? selected = 5 : selected = null">
-                                    <div class="flex items-center justify-between">
-                                        <input type="checkbox" name="panel" id="panel-1" class="hidden">
-                                        <span class="accord-heading">
-                                            GRAVEL</span>
-                                        <span class="ico-plus"></span>
-                                    </div>
-                                </button>
-
-                                <div class="relative overflow-hidden transition-all max-h-0 duration-700" style=""
-                                    x-ref="container1"
-                                    x-bind:style="selected == 5 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
-                                    <div class="p-6">
-                                        <p
-                                            class="text-base antialiased font-normal tracking-wide leading-7 text-justify">
-                                            We are also supplying gravel to the customers, gravel are used for road
-                                            construction, for mixing with asphalt, as construction fill, and in the
-                                            production of construction materials like concrete blocks, bricks, and
-                                            pipes. It is also used to make roofing shingles, used on icy roads in the
-                                            winter, for railroad ballast, and water filtration. </p>
-
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
     </div>
 </section>
 
@@ -543,17 +547,17 @@
     </g>
 </svg>
 
-<section class="container mx-auto text-center py-6 mb-12">
+<section class="container mx-auto text-center py-6 mb-12 -mt-12 lg:-mt-24">
 
-    <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">Call to Action</h1>
+    {{-- <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">Call to Action</h1> --}}
     <div class="w-full mb-4">
-        <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
+        {{-- <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div> --}}
     </div>
 
-    <h3 class="my-4 text-3xl leading-tight">Main Hero Message to sell yourself!</h3>
+    {{-- <h3 class="my-4 text-3xl leading-tight">Main Hero Message to sell yourself!</h3> --}}
 
-    <button
-        class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Action!</button>
+    {{-- <button
+        class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Action!</button> --}}
 
 </section>
 
