@@ -34,13 +34,14 @@
         transform: scale(1.1);
     }
 
+
 </style>
 <!--Slider-->
 
 <section>
     <div class="pt-14 bg-white">
-        <div id="slider" class="swiper-container w-full flex flex-wrap flex-col md:flex-row">
-            <div class="swiper-wrapper">
+        <div id="slider" class="swiper-container w-full flex flex-wrap flex-col md:flex-row width: fit-content; animation: carouselAnim 15s infinite alternate linear;">
+            <div class="swiper-wrapper ">
                 <div class="swiper-slide  bg-contain bg-center slider-image">
                     <div class="container mx-auto px-10 md:px-20 py-10 h-auto">
                         <div class="w-full ">
@@ -843,7 +844,6 @@ l225 123 3 123 c1 67 -1 122 -5 122 -4 0 -140 -74 -300 -163z" />
 
 <section class="bg-white border-b py-8">
     <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-
         <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
             <div
                 class="flex-1 gradient rounded-t rounded-b-none overflow-hidden shadow-2xl border-double border-4 border-light-blue-500 ">

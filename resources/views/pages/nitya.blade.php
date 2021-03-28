@@ -188,6 +188,28 @@
                     <!-- END Article -->
                 </div>
                 <!-- END Column -->
+
+                <!-- Column -->
+                <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+                    <!-- Article -->
+                    <article class="overflow-hidden rounded-lg shadow-lg">
+                        <a href="#">
+                            <img alt="Placeholder"
+                                class="block object-cover h-48 w-full transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 "
+                                src="assets/nitya/fly-ash.jpg">
+                        </a>
+                        <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                            <h1 class="text-lg">
+                                <a class="no-underline hover:underline text-black" href="#">
+                                    Fly Ash
+                                </a>
+                            </h1>
+
+                        </header>
+                    </article>
+                    <!-- END Article -->
+                </div>
+                <!-- END Column -->
             </div>
         </div>
     </section>
