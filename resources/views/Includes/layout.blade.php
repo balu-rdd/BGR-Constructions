@@ -3,8 +3,6 @@
 
 <head>
   @include('Includes.head')
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <style>
     .swiper-wrapper {
       width: 100%;
@@ -127,10 +125,22 @@
 
   @yield('content')
   @include('Includes.footer')
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <script src="{{asset('js/app.js')}}"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0kZnRLFjz_ASoOcwRg_0ukkdxrC8JGNc&callback=initMap&libraries=&v=weekly"
     async></script>
+
+  <script>
+    $('.autoplay').slick({
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 1800,
+});
+		
+  </script>
   <script>
     function initMap() {
   // The location of Uluru
@@ -150,7 +160,7 @@
   </script>
 
   <!-- jQuery if you need it-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> --}}
 
   <script>
     var scrollpos = window.scrollY;

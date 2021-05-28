@@ -3,45 +3,14 @@
 
 @section('content')
 <style>
-    @keyframes carouselAnim {
-        from {
-            transform: translate(0, 0);
-        }
-
-        to {
-            transform: translate(calc(-100% + (6*300px)));
-        }
-    }
-
-    @media only screen and (max-width: 768px) {
-        .container .carousel-items {
-            animation: carouselAnim 60s infinite alternate linear;
-        }
-
-        @keyframes carouselAnim {
-            from {
-                transform: translate(0, 0);
-            }
-
-            to {
-                transform: translate(calc(-100% + (5*300px)));
-            }
-        }
-    }
-
-    .carousel-focus:hover {
-        transition: all 0.8s;
-        transform: scale(1.1);
-    }
-
 
 </style>
 <!--Slider-->
 
 <section>
     <div class="pt-14 bg-white">
-        <div id="slider" class="swiper-container w-full flex flex-wrap flex-col md:flex-row width: fit-content; animation: carouselAnim 15s infinite alternate linear;">
-            <div class="swiper-wrapper ">
+        <div class="w-full flex flex-wrap flex-col md:flex-row ">
+            <div class="swiper-wrapper autoplay ">
                 <div class="swiper-slide  bg-contain bg-center slider-image">
                     <div class="container mx-auto px-10 md:px-20 py-10 h-auto">
                         <div class="w-full ">
@@ -109,7 +78,10 @@
             </div>
             {{-- <div class="hidden md:flex swiper-button-prev bg-white w-16 h-16 text-xs rounded-full text-pink-500"></div>
         <div class="hidden md:flex swiper-button-next bg-white w-16 h-16 text-xs rounded-full text-pink-500"></div> --}}
-            <div class="swiper-pagination"></div>
+
+            <!-- Add Arrows -->
+            {{-- <div class="swiper-button-next "></div>
+            <div class="swiper-button-prev"></div> --}}
         </div>
     </div>
 </section>
