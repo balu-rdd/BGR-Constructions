@@ -866,8 +866,7 @@ l225 123 3 123 c1 67 -1 122 -5 122 -4 0 -140 -74 -300 -163z" />
 
 <section class="bg-white">
     <div class="container mx-auto w-full overflow-hidden relative">
-        <div class="carousel-items flex items-center justify-center"
-            style="width: fit-content; animation: carouselAnim 15s infinite alternate linear;">
+        <div class="carousel-items flex items-center justify-center autoplay-1">
             <div class="carousel-focus flex items-center flex-col relative bg-white mx-5 my-10 px-4 py-3 rounded-lg shadow-lg"
                 style="width: 270px;">
                 <img class="object-contain h-48 w-full " src="{{asset('assets/client_logo/gayatri.gif')}}" alt="Img">
@@ -900,7 +899,7 @@ l225 123 3 123 c1 67 -1 122 -5 122 -4 0 -140 -74 -300 -163z" />
 
             <div class="carousel-focus flex items-center flex-col relative bg-white mx-5 my-10 px-4 py-3 rounded-lg shadow-lg"
                 style="width: 270px;">
-                <img class="object-contain h-48 w-full" src="assets/client_logo/ultratech-cement-logo.png" alt="Img">
+                <img class="object-contain h-48 w-full" src="assets/client_logo/kotec.png" alt="Img">
             </div>
 
             <div class="carousel-focus flex items-center flex-col relative bg-white mx-5 my-10 px-4 py-3 rounded-lg shadow-lg"

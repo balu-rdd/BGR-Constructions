@@ -139,6 +139,15 @@
   autoplay: true,
   autoplaySpeed: 1800,
 });
+
+$('.autoplay-1').slick({
+  slidesToScroll: 5,
+  slidesToShow: 5,
+  autoplay: true,
+  infinite: true,
+  autoplaySpeed: 700,
+
+});
 		
   </script>
   <script>
