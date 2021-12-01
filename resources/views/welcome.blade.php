@@ -907,6 +907,24 @@ l225 123 3 123 c1 67 -1 122 -5 122 -4 0 -140 -74 -300 -163z" />
                 <img class="object-contain h-48 w-full" src="assets/client_logo/dp-jain.png" alt="Img">
             </div>
 
+            <div class="carousel-focus flex items-center flex-col relative bg-white mx-5 my-10 px-4 py-3 rounded-lg shadow-lg"
+                style="width: 270px;">
+                <img class="object-contain h-48 w-full" src="assets/client_logo/abmauri.png" alt="Img">
+            </div>
+            <div class="carousel-focus flex items-center flex-col relative bg-white mx-5 my-10 px-4 py-3 rounded-lg shadow-lg"
+                style="width: 270px;">
+                <img class="object-contain h-48 w-full" src="assets/client_logo/adaniPorts.png" alt="Img">
+            </div>
+            <div class="carousel-focus flex items-center flex-col relative bg-white mx-5 my-10 px-4 py-3 rounded-lg shadow-lg"
+                style="width: 270px;">
+                <img class="object-contain h-48 w-full" src="assets/client_logo/mando.jpeg" alt="Img">
+            </div>
+            <div class="carousel-focus flex items-center flex-col relative bg-white mx-5 my-10 px-4 py-3 rounded-lg shadow-lg"
+                style="width: 270px;">
+                <img class="object-contain h-48 w-full" src="assets/client_logo/smnl.svg" alt="Img">
+            </div>
+
+
         </div>
 
     </div>
